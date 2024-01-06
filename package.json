@@ -1,5 +1,5 @@
 {
-  "name": "social_network_api",
+  "name": "code_crackers",
   "version": "1.0.0",
   "description": "A social network API that uses a NoSQL database (MongoDB)",
   "main": "index.js",
