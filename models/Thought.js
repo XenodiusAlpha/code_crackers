@@ -15,6 +15,7 @@ const thoughtSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
+            // using getter method to format the timestamp on query
             get: timeStampFormat => new Date(timeStampFormat).toLocaleString(),
         },
         username: {
@@ -39,7 +40,7 @@ thoughtSchema
     return this.reactions.length;
 });
 
-// instantiate User variable with a name and it's schema properties
+// Instantiate Thought variable with a name and it's schema properties
 const Thought = model('thought', thoughtSchema);
 
 // exports User model to be used

@@ -44,7 +44,7 @@ userSchema
     return this.friends.length;
 });
 
-// instantiate User variable with a name and it's schema properties
+// Instantiate User variable with a name and it's schema properties
 const User = model('user', userSchema);
 
 // exports User model to be used
