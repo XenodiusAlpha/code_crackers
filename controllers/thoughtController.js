@@ -113,6 +113,7 @@ module.exports = {
         try {
             const thoughtReaction = await Thought.findOneAndUpdate(
                 { _id: req.params.thoughtId },
+                // removes reaction specified in the params from the selected thought
                 { $pull: { reactions: { _id: req.params.reactionId }}},
                 { runValidators: true, new: true }
             );
