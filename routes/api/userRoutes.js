@@ -1,5 +1,6 @@
 // declare variable for required router function
 const router = require('express').Router();
+
 // call functions from userController to be used in routes
 const {
     getUsers,
