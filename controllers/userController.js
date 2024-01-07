@@ -40,7 +40,7 @@ module.exports = {
     async createUser(req, res) {
         try {
             const user = await User.create(req.body);
-            res.status(200).json(user)
+            res.status(200).json(user);
         } catch (error) {
             return res.status(500).json(error);
         }
@@ -87,8 +87,10 @@ module.exports = {
     // Add a User as a friend
     async addFriend(req, res) {
         try {
+            // find the user to add the friend to
             const userFriend = await User.findOneAndUpdate(
                 { _id: req.params.userId },
+                // if already added, will not re-add $addToSet
                 { $addToSet: { friends: req.params.friendId } },
                 { runValidators: true, new: true }
             );
