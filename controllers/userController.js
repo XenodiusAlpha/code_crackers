@@ -110,6 +110,7 @@ module.exports = {
         try {
             const userFriend = await User.findOneAndUpdate(
                 { _id: req.params.userId },
+                // removes friend specified in the params from the selected user
                 { $pull: { friends: req.params.friendId }},
                 { runValidators: true, new: true }
             );
