@@ -12,6 +12,7 @@
 - [License](#license)
 - [Screenshots](#screenshots)
 - [Videolink](#videolink)
+- [Repository](#repository)
 - [Questions](#questions)
 
 ## Description
@@ -104,10 +105,16 @@ Contributions are welcome! Please submit issues or pull requests for any improve
 This project is licensed under the [MIT License](LICENSE).
 
 ## Screenshots
-
+![GET All Users](./screenshots/get.png)
+![POST Reaction](./screenshots/create.png)
+![PUT Thought](./screenshots/update.png)
+![DELETE Friend](./screenshots/delete.png)
 
 ## Videolink
+https://drive.google.com/file/d/1RiyUX2WbqSdAPIxLQakn64jUVgce0HW5/view?usp=sharing
 
+# Repository
+https://github.com/XenodiusAlpha/code_crackers
 
 ## Questions
 
